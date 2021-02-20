@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<body>
+	<script type="text/javascript">
+		function computerPlay(){
+			let randNum = Math.floor((Math.random() * 30) + 1);
+			if (randNum <= 10){
+				return "rock"
+			} else if (randNum <= 20){
+				return "paper"
+			} else if (randNum <= 30){
+				return "scissors"
+			}
+		}
+		function playRound(playerSelection, computerSelection){
+			if ((playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") ||
+			 (playerSelection.toLowerCase() == "paper" && computerSelection == "rock") ||
+			 (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper")) {
+			 	return `You win: ${playerSelection} beats ${computerSelection}`
+			 } else if (playerSelection.toLowerCase() == computerSelection){
+			 	return "It\'s a draw"
+			 }	else {
+			 	return `You lose: ${computerSelection} beats ${playerSelection}` 
+			 }
+		}
+		function game(){
+			for (var i = 1; i <= 5; i++) {
+				let playerSelection = prompt("What is your play?"),
+				computerSelection = computerPlay(),
+				result = playRound(playerSelection,computerSelection);
+				console.log(`You played ${playerSelection}, the computer played ${computerSelection}`);
+				console.log(result);
+			}
+		}
+		game()
+	</script>
+</body>
