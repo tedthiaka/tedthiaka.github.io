@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Library</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+<body>
+    <nav>
+        <div class="header">
+            <h1>My Library</h1>
+        </div>
+        <div class="creator">
+            <a href="https://github.com/tedthiaka">
+                <p>Created by tedthiaka</p>
+                <i class="fab fa-github-square"></i>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="form-btn">
+            <div class="plus-icon">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="add-book">
+                <span>Add a Book</span>
+            </div>
+        </div>
+        <div class="container inactive"></div>
+        <div class="input-form-container inactive">
+            <form id = "input-form" action="">
+                <div class="form-title">
+                    <label for="title">Title: </label>
+                    <input type="text" name="title" id="title">
+                </div>
+    
+                <div class="form-author">
+                    <label for="author">Author: </label>
+                    <input type="text" name="author" id="author">
+                </div>
+                
+                <div class="form-pages">
+                    <label for="pages">Pages: </label>
+                    <input type="text" name="pages" id="pages">
+                </div>
+    
+                <div class="form-status">
+                    <input type="checkbox" name="status" id="status">
+                    <label for="status">I Have Read This Before</label>
+                </div>
+                
+                <div class="form-image-url">
+                    <label for="image-url">Image URL: </label>
+                    <input type="text" name="image-url" id="image-url">
+                </div>
+            </form>
+            <div class="submit">
+                <button id="submit-button">
+                    <span>SUBMIT</span>
+                </button>
+            </div>
+        </div>
+        <div id="library-container">
+            <div class="book" id="0">
+                <div class="cover">
+                    <div class="image">
+                        <img class = "default-img" src="books.png" alt="books-stack">
+                    </div>
+                    <div class="title">
+                        <p>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-check-circle status"></i>
+                    <p>230 pgs</p>
+                    <div class="delete-cont">
+                        <button class="delete-button"><span>Delete</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book" id="1">
+                <div class="cover">
+                    <div class="image">
+                        <img class = "default-img" src="books.png" alt="books-stack">
+                    </div>
+                    <div class="title">
+                        <p>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-check-circle status"></i>
+                    <p>230 pgs</p>
+                    <div class="delete-cont">
+                        <button class="delete-button"><span>Delete</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book" id="2">
+                <div class="cover">
+                    <div class="image">
+                        <img class = "default-img" src="books.png" alt="books-stack">
+                    </div>
+                    <div class="title">
+                        <p>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-check-circle status"></i>
+                    <p>230 pgs</p>
+                    <div class="delete-cont">
+                        <button class="delete-button"><span>Delete</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book" id="3">
+                <div class="cover">
+                    <div class="image">
+                        <img class = "default-img" src="books.png" alt="books-stack">
+                    </div>
+                    <div class="title">
+                        <p>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-check-circle status"></i>
+                    <p>230 pgs</p>
+                    <div class="delete-cont">
+                        <button class="delete-button"><span>Delete</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book" id="4">
+                <div class="cover">
+                    <div class="image">
+                        <img class = "default-img" src="books.png" alt="books-stack">
+                    </div>
+                    <div class="title">
+                        <p>The Chronicles of Narnia: The Lion, The Witch and The Wardrobe</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-check-circle"></i>
+                    <p>230 pgs</p>
+                    <div class="delete-cont">
+                        <button class="delete-button"><span>Delete</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="./book-constructor.js"></script>
+</html>
