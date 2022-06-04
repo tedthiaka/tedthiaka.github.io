@@ -149,9 +149,9 @@ function addBookToScript(book){
     });
 };
 
-function deleteBook(library, child){
-    let parent = child.parentElement.parentElement,
-            bookId = child.parentElement.parentElement.id,
+function deleteBook(library, deleteBtn){
+    let parent = deleteBtn.parentElement.parentElement.parentElement,
+            bookId = parent.id,
             bookIndex;
 
         library.forEach(book => {
